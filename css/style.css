@@ -1,0 +1,199 @@
+/* HEADER */
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 70px;
+  padding: 1rem 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* FORSIDE */
+
+.hero {
+  width: 100%;
+  background-image: url(../img/forside.webp);
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero p {
+  border-bottom: 1px solid black;
+  margin-bottom: 70px;
+  margin-inline: 10px;
+}
+
+/* UNDERSIDER */
+
+main {
+  margin: auto;
+  padding: 0 20px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 10px 0;
+}
+.et-billede {
+  margin: 10px 0;
+}
+
+/* BURGERMENU */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+nav {
+  display: none;
+}
+nav.active {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 77px;
+  margin-left: -15px;
+  margin-right: -20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* STYLE MENU */
+
+.burger-menu {
+  height: auto;
+  width: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 6px;
+}
+.line {
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  margin-block: 6px;
+}
+
+/* TRENDS */
+
+.trend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.trends {
+  display: grid;
+  row-gap: 2em;
+}
+
+.intro-tekst {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.trend-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.trend-item img {
+  width: 180px;
+}
+
+.trend-item h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-left: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.trend-item.reverse h2 {
+  margin-left: 0;
+  margin-right: -30px;
+}
+
+.kjole-over-bukser {
+  position: relative;
+  right: -85px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+  .trend-item img {
+    width: 240px;
+  }
+
+  .trend-item h2 {
+    font-size: 44px;
+    margin-left: -40px;
+  }
+
+  .trend-item.reverse h2 {
+    margin-right: -40px;
+  }
+
+  .kjole-over-bukser {
+    right: -30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trend-item img {
+    width: 280px;
+  }
+
+  .trend-item h2 {
+    font-size: 52px;
+    margin-left: -20px;
+  }
+
+  .trend-item.reverse h2 {
+    margin-right: -50px;
+  }
+
+  .kjole-over-bukser {
+    right: -40px;
+  }
+}
+
+/* MAP */
+
+.map-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+}
